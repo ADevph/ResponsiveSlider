@@ -87,7 +87,7 @@ const Slider2 = () => {
                   <img
                     src={product.img}
                     alt={product.title}
-                    className={`w-full h-full lg:w-4/5 lg:h-4/5 rounded-md object-cover`}
+                    className={`w-full h-full lg:w-4/6 lg:h-4/5 rounded-md object-cover`}
                   />
                 </div>
                 <div className="w-2/3 md:w-1/2 lg:w-2/3 flex flex-col justify-start items-start">

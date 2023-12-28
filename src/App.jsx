@@ -1,7 +1,6 @@
-
-import './App.css';
-import Slider1 from './Components/Slider1';
-import Slider2 from './Components/slider2';
+import "./App.css";
+import Slider1 from "./Components/Slider1";
+import Slider2 from "./Components/slider2";
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
       <br />
       <div className="mt-6">
         <h1 className="text-2xl font-semibold mb-2">Product Slider 2</h1>
-<Slider2 />
+        <Slider2 />
       </div>
     </div>
   );

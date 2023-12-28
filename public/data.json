@@ -14,7 +14,8 @@
       "title": "Product Name 2",
       "price": "$59.99",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "discount": "5%"
+      "discount": "5%",
+      "bonus": "$55.99"
     },
     {
       "id": 3,
@@ -22,7 +23,9 @@
       "title": "Product Name 3",
       "price": "$39.99",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "discount": "10%"
+      "discount": "10%",
+      "bonus": "$49.99"
+
     },
     {
       "id": 4,
@@ -38,7 +41,9 @@
       "title": "Product Name 5",
       "price": "$69.99",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "discount": "10%"
+      "discount": "10%",
+      "bonus": "$79.99"
+
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "title": "Product Name 6",
       "price": "$49.99",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "discount": ""
+      "discount": "",
+      "bonus": "$59.99"
     },
     {
       "id": 7,
@@ -62,7 +68,9 @@
       "title": "Product Name 8",
       "price": "$79.99",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "discount": "10%"
+      "discount": "10%",
+      "bonus": "$89.99"
+
     }
   ]
 }

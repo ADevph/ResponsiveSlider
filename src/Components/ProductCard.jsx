@@ -3,12 +3,12 @@ import { FaHeart } from "react-icons/fa";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { IoMdSearch } from "react-icons/io";
 
-const ProductCard = ({ img, title, price, description, discount }) => {
+const ProductCard = ({ img, title, price, description, discount, bonus }) => {
   return (
     <div className="relative bg-white rounded-lg overflow-hidden p-4 group">
       <div className="relative flex justify-start items-start">
         {discount && (
-          <div className="absolute top-0 left-0 bg-orange-400 text-white px-2 py-1 rounded-lg z-10">
+          <div className="absolute top-0 left-0 bg-orange-400 text-white px-1 py-1 rounded-xl z-10">
             {discount}
           </div>
         )}
@@ -68,7 +68,20 @@ const ProductCard = ({ img, title, price, description, discount }) => {
             />
           </div>
           <h2 className="text-lg font-semibold mb-2">{title}</h2>
-          <span className="text-gray-700 font-semibold mb-2">{price}</span>
+          <div className="flex items-center mb-2">
+            <span className="text-gray-700 font-semibold">{price}</span>
+
+            {bonus && (
+              <>
+                <s>
+                  {" "}
+                  <span className="font-bold ml-2 text-slate-300">
+                    {bonus}
+                  </span>{" "}
+                </s>
+              </>
+            )}
+          </div>
           <p className="text-gray-600 text-start text-sm mb-2">{description}</p>
           <button className="hidden group-hover:block bg-black bg-opacity-70 text-white p-1 px-2 rounded-lg mb-8">
             Add to Cart
