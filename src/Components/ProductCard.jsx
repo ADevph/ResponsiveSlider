@@ -3,10 +3,16 @@ import { FaHeart } from "react-icons/fa";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { IoMdSearch } from "react-icons/io";
 
-const ProductCard = ({ img, rating, title, price, description }) => {
+const ProductCard = ({ img, title, price, description, discount }) => {
   return (
     <div className="relative bg-white rounded-lg overflow-hidden p-4 group">
       <div className="relative flex justify-start items-start">
+        {discount && (
+          <div className="absolute top-0 left-0 bg-orange-400 text-white px-2 py-1 rounded-lg z-10">
+            {discount}
+          </div>
+        )}
+
         <div className="w-2/3 pr-4">
           <div className="relative group">
             <div className="relative">
